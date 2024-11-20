@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+    <script src="https://kit.fontawesome.com/58fe055d30.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.css" />
   </head>
   <body>
     <noscript>
@@ -13,5 +17,28 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    
+    
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJBwz8_utXsEc8ur6uQAEhSfrwYA_A_co&v=beta&callback=initMap&language=en"></script>
+    <script src="https://cdn.jsdelivr.net/npm/driver.js@1.0.1/dist/driver.js.iife.js"></script>
   </body>
 </html>
+
+<style>
+      /**Clase para el tour**/
+      .my-custom-popover-class {
+        color: white;
+        background: #00205c;
+        max-width: 350px
+    }
+
+    .header-fixed .v-data-table__wrapper {
+        max-height: calc(90vh - 140px) !important;
+        min-height: 200px !important;
+    }
+
+    .custom-tooltip {
+        max-width: 600px !important;
+        display: block;
+    }
+</style>
